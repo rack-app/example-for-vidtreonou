@@ -5,17 +5,23 @@ GEM
     rack-app (8.1.0)
       rack (>= 3.0.0)
       rackup
+    rack-app-front_end (0.22.1)
+      rack-app (>= 6.3.1)
+      tilt
     rackup (2.1.0)
       rack (>= 3)
       webrick (~> 1.8)
+    tilt (2.2.0)
     webrick (1.8.1)
 
 PLATFORMS
+  arm64-darwin-22
   x86_64-linux
 
 DEPENDENCIES
   rack
   rack-app
+  rack-app-front_end (~> 0.22.1)
 
 BUNDLED WITH
    2.4.19
