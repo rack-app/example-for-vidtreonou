@@ -6,4 +6,10 @@ class Sso < Rack::App
    end
 end
 
-run Sso
+class App < Rack::App
+  apply_extensions :logger
+
+  mount Sso, to: "/"
+end
+
+run App
